@@ -3,11 +3,11 @@
         <div class="ui card my-ig-card">
             <div class="content">
                 <div class="right floated meta">{{ info.duration }}</div>
-                <img class="ui avatar image" :src="info.avatarImg" />
+                <img class="ui avatar image" :src="info.avatarImage" />
                 {{ info.username }}
             </div>
             <div class="image">
-                <img :src="info.image" />
+                <img :src="img" />
             </div>
             <div class="content">
                 <span class="right floated">
@@ -28,7 +28,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'InstraCard',
+  props: {
+    info: Object,
+    img: String,
+  }
+}
 </script>
 
 <style>
