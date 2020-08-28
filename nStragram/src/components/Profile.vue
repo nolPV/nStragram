@@ -1,18 +1,18 @@
 <template>
-  <h1> {{ msg }} </h1>
+  <div class="ui segment">
+    <img class="ui wireframe image" src="https://semantic-ui.com/images/wireframe/media-paragraph.png" />
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Profile',
+  name: "Profile",
   data: function() {
     return {
-      msg: 'This is my profile component'
-    }
+      msg: "This is my profile component"
+    };
   }
-}
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
